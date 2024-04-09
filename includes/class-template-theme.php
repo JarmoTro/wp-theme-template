@@ -1,11 +1,14 @@
 <?php
 
+if (!defined('ABSPATH')) {
+    exit;
+}
+
 /**
  * The core theme class.
  *
  * @since      0.1.0
  */
-
 class Template_Theme {
 
     /**
@@ -22,6 +25,7 @@ class Template_Theme {
      * Set the theme version and initialize all required functionality.
      *
      * @since    0.1.0
+     * @return   void
      */
     public function __construct() {
 
@@ -45,6 +49,7 @@ class Template_Theme {
      * - includes/shortcodes/class-template-shortcode-hello-world. Shortcode that returns "Hello world!".
      *
      * @since    0.1.0
+     * @return   void
      */
     private function load_dependencies(){
 

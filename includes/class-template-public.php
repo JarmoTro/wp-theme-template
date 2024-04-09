@@ -32,6 +32,7 @@ class Template_Public {
      *
      * @since     0.1.0
      * @param     string    $version    The version of this theme.
+     * @return    void
      */
     public function __construct($version) {
         $this->version = $version;
@@ -63,6 +64,7 @@ class Template_Public {
      * Register and enqueue the stylesheets for the public-facing side of the site.
      *
      * @since    0.1.0
+     * @return    void
      */
     public function enqueue_styles() {
         wp_enqueue_style('template-main-styles', get_stylesheet_directory_uri() . '/assets/css/main' . $this->maybe_minify_file_extension(".css"), array(), $this->version, 'all');
@@ -72,6 +74,7 @@ class Template_Public {
      * Register and enqueue the scripts for the public-facing side of the site.
      *
      * @since    0.1.0
+     * @return    void
      */
     public function enqueue_scripts() {
         wp_enqueue_script('template-main-scripts', get_stylesheet_directory_uri() . '/assets/js/main' . $this->maybe_minify_file_extension(".js"), array(), $this->version, true);

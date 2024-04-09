@@ -5,14 +5,14 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Shortcode that returns "Hello world!"
+ * Shortcode that returns "Hello world!".
  *
  * @since      0.1.0
  */
 class Template_Shortcode_Hello_World extends Template_Shortcode{
 
     /**
-     * Returns the content of the shortcode
+     * Returns the content of the shortcode.
      *
      * @since     0.1.0
      * @param     string[]  $atts    Attributes passed to the shortcode.
